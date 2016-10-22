@@ -22,7 +22,8 @@ Have fun reading! :blush:
   - **Efficient?** Runs in about .02 seconds, according to the Unix `time` utility. That’s pretty efficient as far as I’m concerned. (And yes, I watched out for running the same program a few times in a row. Haskell is surprisingly well-optimized by the CPU cache, from what I can tell.)
   - **Simple?** Just two lines of definitions, taking advantage of list comprehensions and `any :: (a -> Bool) -> [a] -> Bool`. I probably couldn’t get better than this without pulling out the only function definition in the entire program.
   - **Learned?** Not all that much. Mainly got used to the type system—specifically, the nature of `mod :: Integral a => a -> a -> a`.
+
 2. [“Even Fibonacci numbers”](https://projecteuler.net/problem=2)
   - **Efficient?** .03 seconds.
-  - **Simple?** Pretty good at this point, though I wish there were some way to collapse the two function definitions required to make use of an accumulator parameter into one more compact definition.
+  - **Simple?** Pretty simple at this point, though I wish there were some way to collapse the two function definitions required to make use of an accumulator parameter into one more compact definition.
   - **Learned?** Started out as somewhat of a cheat, where I found out how many even Fibonacci numbers were less than four million and hard-coded that value into the program by feeding it to `take :: Int -> [a] -> [a]`. This was because `filter :: (a -> Bool) -> [a] -> [a]` has no facilities to avoid enumerating the entire list, even when the given function is `(< 4000000)`, since the type system can’t prove that the sequence is ever-increasing. I made `stop :: (a -> Bool) -> [a] -> [a]` in response; it works recursively to move items over one by one until an item matches the stop-test. Fairly proud of this solution, though I wonder whether I could’ve used a function that was already somewhere in the standard library.
