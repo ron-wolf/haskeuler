@@ -14,6 +14,9 @@ Have fun reading! :blush:
 - Move utility functions to external modules. I’ve begun reusing certain functions (such as `divBy` and `prime`) throughout Project Euler, so this would reduce duplications and make code more readable (if spread out).
 - Remove commented sections. I started work on some pretty cool functions before realizing I didn’t actually need them for the task at hand. However, I’m sure they’d be useful for _some_ use cases, and I couldn’t find anything similar on [Hoogle](https://www.haskell.org/hoogle/). These will remain available in the commit log.
 
+### At some point
+- Try out Vim/Emacs. I’ve been using Sublime Text with the SublimeHaskell and Hoogle plugins, but I could probably benefit from a tighter and more consistent set of keyboard shortcuts, a simpler API, and the comfort of knowing I’m supporting open source. Might try Evil Mode, Spacemacs, or some other bastard child of the two major CLI editors.
+
 ## Progress
 1. [“Multiples of 3 and 5”](https://projecteuler.net/problem=1)
   - **Efficient?** Runs in about .02 seconds, according to the Unix `time` utility. That’s pretty efficient as far as I’m concerned. (And yes, I watched out for running the same program a few times in a row. Haskell is surprisingly well-optimized by the CPU cache, from what I can tell.)
