@@ -11,7 +11,7 @@ Have fun reading! 😊
 - Try to avoid the accumulator pattern, at least where I don’t specifically need it for tail recursion. Having two versions of every function makes code much less readable, and I don’t really feel like using a `where` clause to inline a multi-line function definition.
 
 ### Minor
-- Move utility functions to external modules. I’ve begun reusing certain functions throughout Project Euler, so this would reduce duplications and make code more readable (if spread out).
+- Move utility functions to external modules. I’ve begun reusing certain functions (such as `divBy` and `prime`) throughout Project Euler, so this would reduce duplications and make code more readable (if spread out).
 - Remove commented sections. I started work on some pretty cool functions before realizing I didn’t actually need them for the task at hand. However, I’m sure they’d be useful for _some_ use cases, and I couldn’t find anything similar on [Hoogle](https://www.haskell.org/hoogle/). These will remain available in the commit log.
 
 ## Progress
