@@ -13,3 +13,8 @@ Have fun reading! 😊
 ### Minor
 - Move utility functions to external modules. I’ve begun reusing certain functions throughout Project Euler, so this would reduce duplications and make code more readable (if spread out).
 - Remove commented sections. I started work on some pretty cool functions before realizing I didn’t actually need them for the task at hand. However, I’m sure they’d be useful for _some_ use cases, and I couldn’t find anything similar on [Hoogle](https://www.haskell.org/hoogle/). These will remain available in the commit log.
+
+## Progress
+ID | Name | Efficient? | Simple?
+---|------|------------|--------
+1 | “Multiples of 3 and 5” | Runs in about .02 seconds, according to the Unix `time` utility. That’s pretty efficient as far as I’m concerned. | Just two lines of definitions, taking advantage of list comprehensions and `any :: (a -> Bool) -> [a] -> Bool`. I probably couldn’t get better than this without pulling out the only function definition in the entire program.
